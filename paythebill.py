@@ -12,6 +12,7 @@ print("Please note, this app currently only works with a party of 4")
 guests = []
 num_guests = int(input("How many in your party?: "))
 
+# Determine the number of guests and enter their names
 if num_guests == 2:
     guests.append(input("Please enter the first name: "))
     guests.append(input("Please enter the second name: "))
@@ -31,7 +32,9 @@ elif num_guests == 1:
 else:
     print("That number of people isn't supported yet.")
 
-if len(guests) < 2 and len(guests) > 0:
+
+# Determine who is gonna pay the bill
+if 0 > len(guests) > 2:
     print("\nYou eating alone? Tell the house to take $5 on us. They know it's us...")
 elif len(guests) == 2:
     wild_card = random.randint(0, 1)
