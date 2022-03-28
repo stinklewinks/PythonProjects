@@ -21,3 +21,7 @@ elif(30 < the_bmi < 35):
     print("You are obese")
 else:
     print("You phat phuck")
+
+print("""
+*** Thank you for using the BMI calculator. Please check back for more updates! ***
+""")
