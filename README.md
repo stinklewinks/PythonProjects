@@ -3,6 +3,20 @@ This is a repo for my Python projects for CS
 
 Scripts currently included:
 
+Currently, all scripts are meant to be run in the Console, Terminal or Shell of your OS. 
+
+If you have python installed 
+
+```bash
+python3 main.py
+```
+
+or any other script you choose:
+
+```bash
+python3 pizza.py
+```
+
 - main.py
 - lifeinweeks.py
 - oddoreven.py
