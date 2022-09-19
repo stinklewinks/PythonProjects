@@ -15,7 +15,6 @@ chars = string.ascii_letters
 new_chars = chars.split(" ")
 the_numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 the_symbols = [')', '!', '@', '#', '$', '%', '^', '&', '*', '(', '.']
-print(new_chars)
 chars_list = []
 
 for _ in chars:
@@ -23,20 +22,20 @@ for _ in chars:
 
 if pass_length:
     new_pass = []
-    print(pass_length)
     counter = 0
     while counter < pass_length:
         if symbol_count == 'y' and num_count == 'y':
             new_pass.append(new_chars[0][round(random.randint(0, 51))])
-            new_pass.append(the_numbers[round(random.randint(0, 10))])
-            new_pass.append(the_symbols[round(random.randint(0, 11))])
+            new_pass.append(the_numbers[round(random.randint(0, 9))])
+            new_pass.append(the_symbols[round(random.randint(0, 10))])
             counter += 1
             the_new_password = ''.join([str(item) for item in new_pass])
         else:
             new_pass.append(new_chars[0][round(random.randint(0, 51))])
             counter += 1
             the_new_password = ''.join([str(item) for item in new_pass])
-    print(new_pass)
+    
+    print("Your new password: ")
     print(the_new_password)
 else:
     print("You did not specify a length. Program aborted.")

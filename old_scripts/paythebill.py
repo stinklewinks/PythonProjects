@@ -34,8 +34,8 @@ else:
 
 
 # Determine who is gonna pay the bill
-if 0 > len(guests) > 2:
-    print("\nYou eating alone? Tell the house to take $5 on us. They know it's us...")
+if len(guests) < 2:
+    print("\nYou eating alone? Tell the house to ADD A SAD 5 on us. They know it's us...")
 elif len(guests) == 2:
     wild_card = random.randint(0, 1)
     print(f"{guests[wild_card]} has to pay the bill.")

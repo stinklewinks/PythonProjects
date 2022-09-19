@@ -18,12 +18,12 @@ while go == 'y':
     player_input = int(input("Choose 0 (for Rock), 1 (for Paper), and 2 (for Scissors): "))
     cpu_input = random.randint(0, 2)
     if player_input > cpu_input:
-        if player_input == 2:
+        if player_input == 2 and cpu_input == 1:
             print("""
             Scissors cuts paper. Player wins.
             """)
             go = input("Would you like to go again? y or n: ")
-        if player_input == 1:
+        if player_input == 1 and cpu_input == 0:
             print("""
             Paper covers rock. Player wins.
             """)
