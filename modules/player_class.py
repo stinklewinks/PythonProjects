@@ -25,3 +25,6 @@ class Player:
 
     def evade(self):
         return "You evade from the conflict"
+
+    def heal_self(self):
+        return f"You heal. You now have {self.hp} health."
