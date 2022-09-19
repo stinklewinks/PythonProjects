@@ -28,3 +28,7 @@ class Player:
 
     def heal_self(self):
         return f"You heal. You now have {self.hp} health."
+    
+    def add_skill(self, skill):
+        self.skills.append(skill)
+        return f'You have added {self.skills[-1]} to your set!'

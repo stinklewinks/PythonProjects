@@ -1,14 +1,14 @@
 import time
 import sys
 from modules import level_one
-from player_creation import skills
+from player_creation.skills import magic_skills
 from modules.player_class import Player
 
 game_switch = "y"
 # TODO: Create an ENEMY class. 
 # TODO: Create an interactive opening script
 time.sleep(1)
-print(""" Welcome to the text-based game: Andalon's Mirror.
+print(""" Welcome to the text-based card game: Andalon: War Game.
 This game is brought to you by BERYLSOFT.
 """)
 time.sleep(2)
@@ -22,4 +22,8 @@ while game_switch == "y":
     print(f"Your name will be {new_player.name}")
 
 
-    print(new_player.heal_self())
+    print(new_player.add_skill('Shock'))
+    new_player.add_skill(magic_skills[0])
+    print(new_player.skills)
+    
+    sys.exit(0)
