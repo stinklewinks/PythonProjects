@@ -1,6 +1,6 @@
 import time
 import sys
-from modules import level_one
+from modules.level_one.level_one import level_one_opening
 from player_creation.skills import magic_skills
 from modules.player_class import Player
 
@@ -39,9 +39,7 @@ while game_switch == "y":
     new_player.name = input("What will your character's name be?: ")
     print(f"Your name will be {new_player.name}")
 
-
-    print(new_player.add_skill('Shock'))
-    new_player.add_skill(magic_skills[0])
-    print(new_player.skills)
+    time.sleep(2)
+    level_one_opening()
     
     sys.exit(0)
