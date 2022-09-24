@@ -8,7 +8,7 @@ import random
 import math
 import pymongo
 
-the_client = pymongo.MongoClient("mongodb+srv://stinkledb:GMCie0ScYKbv1cZq@cluster0.5whmq9z.mongodb.net/?retryWrites=true&w=majority")
+the_client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.5whmq9z.mongodb.net/?retryWrites=true&w=majority")
 db = the_client["Cluster0"]
 
 print(the_client.list_database_names())
