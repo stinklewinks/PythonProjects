@@ -12,6 +12,8 @@ class Player:
         self.defense = 50
         self.race = ""
         self.skills = []
+        self.current_level = 1
+        self.completed_lvls = []
         
 
     location = 'Level One: The Southlands'

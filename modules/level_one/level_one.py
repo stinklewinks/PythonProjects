@@ -1,10 +1,12 @@
 import time
 import sys
+from lvl_one_questions import Question
 #level_one_notes = open('./modules/level_one/level one.txt', 'r')
 level_one_notes = open('level one.txt', 'r')
 
 level_one_opening_txt = level_one_notes.readlines()
 
+# TODO: Turn opening into a for loop.
 def level_one_opening():
     time.sleep(2)
     print(level_one_opening_txt[0])
@@ -36,3 +38,11 @@ def portal():
 level_one_opening()
 choice_input = int(input("Enter your choice [1-4]: "))
 print(opening_choice(choice_input))
+print(Question.quest_1['1'])
+the_answer = input('Take a guess: ')
+
+if the_answer == Question.ans_1['A']:
+    print('Correct!')
+else:
+    print('Wrong!')
+
