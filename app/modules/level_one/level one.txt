@@ -1,0 +1,8 @@
+You are in the Southlands.
+You are currently in THE OLD LADY TAVERN & INN
+What would you like to do?:
+1. What room am I in?
+2. How many people are in the room?
+3. Check inventory
+4. Talk to Someone
+
